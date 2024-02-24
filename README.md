@@ -14,3 +14,6 @@
     - git show <SHA(commit_id)>
 - For watching difference between current saved code and previous code
     - git diff
+- For Reverting/Reseting 
+    - git reset --hard <SHA(commit_id)>
+    - git revert <SHA(commit_id)>
