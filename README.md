@@ -1,17 +1,45 @@
 # Git Commands
 
-- For Initialing an empty git folder
+- For Initialing an Empty Git Folder
     - git init 
-- For Adding files for staging
-    - git add <file_path> -> for single file
-    - git add . -> for adding all files
-- For showing log history
-    - git log -> give litle bit more details info about log
-    - git log --oneline -> give log data in one line shorter manner
-- For showing details of specific commit
+- For Adding Files for Staging
+    - git add <file_path> 
+        -  for single file
+    - git add . 
+        - for adding all files
+- For Removing File
+    - git rm <file_path>
+- For Commiting Staging Code
+    - git commit -m " "
+- For Showing Log History
+    - git log 
+        - give litle bit more details info about log
+    - git log --oneline 
+        -  give log data in one line shorter manner
+- For Showing Details of Specific Commit
     - git show <SHA(commit_id)>
-- For watching difference between current saved code and previous code
+- For Showing who did Changes in Specific File 
+    - git blame <file_path>
+- For Watching Difference between Current Saved Code and Previous Code
     - git diff
-- For Reverting/Reseting 
-    - git reset --hard <SHA(commit_id)>
+- To see status of code means how many files are changed
+    - fit status
+- For Reverting/Reseting Back
+    - git reset --hard <SHA(commit_id)> 
+        - it will remove all the below commit from history and HEAD will pointing to this <commit_id>
     - git revert <SHA(commit_id)>
+        -  it will write reverse code and when we stage it and commit it , it will create a new commit with the reverted code
+- For Adding a remote origin
+    - git remote add origin <origin_path>
+- For setting Master Branch as Main
+    - git branch -M main
+- For Pushing commits in Remote server
+    - git push
+    - git push -u origin main
+        - for pushing code in origin server (only first time)
+- For Creating Branch
+    - git branch <branch_name>
+- To see all branches
+    - git branch
+- To switch to any other branch
+    - git checkout <branch_name>
