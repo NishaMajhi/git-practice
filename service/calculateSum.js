@@ -2,4 +2,4 @@ const calculateSum = (a, b) => {
     console.log(`sum of ${a} and ${b} is ${a + b}`)
 }
 
-calculateSum(4, 5)
+calculateSum(3, 4)
